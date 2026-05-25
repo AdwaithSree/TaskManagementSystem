@@ -1,0 +1,156 @@
+.welcome-page{
+  min-height:100vh;
+  background:#050816;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  padding:40px;
+}
+
+.welcome-glow{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(120px);
+}
+
+.glow-1{
+  width:420px;
+  height:420px;
+  background:#6d5dfc;
+  top:-120px;
+  left:-120px;
+  opacity:0.45;
+}
+
+.glow-2{
+  width:320px;
+  height:320px;
+  background:#00d4ff;
+  bottom:-100px;
+  right:-80px;
+  opacity:0.35;
+}
+
+.welcome-card{
+  width:100%;
+  max-width:980px;
+  background:rgba(15,23,42,0.72);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:40px;
+  padding:90px 70px;
+  text-align:center;
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  position:relative;
+  z-index:2;
+  box-shadow:0 20px 70px rgba(0,0,0,0.45);
+}
+
+.welcome-tag{
+  display:inline-block;
+  padding:12px 24px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  color:#cbd5e1;
+  font-size:14px;
+  margin-bottom:32px;
+}
+
+.welcome-logo{
+
+  font-size:72px;
+
+  font-weight:800;
+
+  margin-bottom:28px;
+
+  background:linear-gradient(
+    to right,
+    #ffffff,
+    #8ea2ff
+  );
+
+  background-clip:text;
+
+  -webkit-background-clip:text;
+
+  color:transparent;
+
+  -webkit-text-fill-color:transparent;
+}
+
+.welcome-card h1{
+  font-size:78px;
+  line-height:1.05;
+  font-weight:800;
+  margin-bottom:28px;
+  letter-spacing:-4px;
+  color:white;
+}
+
+.welcome-card p{
+  max-width:720px;
+  margin:auto;
+  color:#94a3b8;
+  font-size:20px;
+  line-height:1.9;
+  margin-bottom:50px;
+}
+
+.welcome-buttons{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.secondary-btn{
+  min-width:200px;
+  height:58px;
+  border:none;
+  border-radius:18px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  color:white;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.secondary-btn:hover{
+  transform:translateY(-3px);
+  background:rgba(255,255,255,0.1);
+}
+
+@media(max-width:768px){
+
+  .welcome-card{
+    padding:50px 24px;
+  }
+
+  .welcome-logo{
+    font-size:48px;
+  }
+
+  .welcome-card h1{
+    font-size:42px;
+  }
+
+  .welcome-card p{
+    font-size:16px;
+  }
+
+  .welcome-buttons{
+    flex-direction:column;
+  }
+
+  .primary-btn,
+  .secondary-btn{
+    width:100%;
+  }
+
+}
